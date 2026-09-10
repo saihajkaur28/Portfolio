@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b1020;
+    color: #f5f7ff;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #252d44;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+section:nth-child(even) {
+    background-color: #10172a;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+p {
+    color: #aeb7cc;
+}
+
+
+/* =========================
+   HEADER / HERO
+========================= */
+
+header {
+    text-align: center;
+    padding: 85px 30px 35px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #20294b 0%,
+            #0b1020 55%
+        );
+
+    border-bottom: 1px solid #252d44;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+header > p:first-of-type {
+    color: #9b87ff;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+header > p:nth-of-type(2) {
+    font-size: 1.1rem;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    margin: 45px auto 25px;
+
+    padding: 15px 20px;
+
+    background-color: rgba(11, 16, 32, 0.85);
+
+    border: 1px solid #2b3550;
+    border-radius: 50px;
+
+    max-width: 1050px;
+
+    backdrop-filter: blur(12px);
+}
+
+nav a {
+    color: #b8c0d4;
+    font-size: 0.95rem;
+
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #9b87ff;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+header > div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+header > div a {
+    padding: 9px 18px;
+
+    border: 1px solid #7c63ff;
+    border-radius: 25px;
+
+    color: #b8aaff;
+
+    transition: 0.3s ease;
+}
+
+header > div a:hover {
+    background-color: #7c63ff;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   HERO CTA
+========================= */
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.hero-cta a {
+    padding: 12px 26px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.hero-cta .btn-primary {
+    background-color: #7c63ff;
+    color: white;
+}
+
+.hero-cta .btn-primary:hover {
+    background-color: #9582ff;
+    transform: translateY(-3px);
+}
+
+.hero-cta .btn-secondary {
+    border: 1px solid #7c63ff;
+    color: #b8aaff;
+}
+
+.hero-cta .btn-secondary:hover {
+    background-color: #7c63ff;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 1.08rem;
+    line-height: 1.9;
+    text-align: left;  
+}
+
+#about .eyebrow {
+    text-align: center;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+#education article {
+    max-width: 750px;
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: #151d32;
+
+    border: 1px solid #28314a;
+    border-radius: 18px;
+
+    transition: 0.3s ease;
+}
+
+#education article:hover {
+    transform: translateY(-6px);
+    border-color: #7c63ff;
+}
+
+#education h3 {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+}
+
+#education h4 {
+    color: #9b87ff;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills {
+    text-align: center;
+}
+
+#skills h3 {
+    color: #9b87ff;
+
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+#skills ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+#skills li {
+    padding: 9px 18px;
+
+    background-color: #151d32;
+
+    border: 1px solid #2b3550;
+    border-radius: 30px;
+
+    color: #dce2f0;
+
+    transition: 0.3s ease;
+}
+
+#skills li:hover {
+    background-color: #7c63ff;
+    border-color: #7c63ff;
+
+    color: white;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   LEARNING JOURNEY
+========================= */
+
+#journey > p {
+    max-width: 750px;
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+#journey ol {
+    list-style: none;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding-left: 35px;
+
+    border-left: 2px solid #7c63ff;
+}
+
+#journey li {
+    position: relative;
+
+    margin-bottom: 45px;
+    padding-left: 30px;
+}
+
+#journey li::before {
+    content: "";
+
+    position: absolute;
+
+    left: -44px;
+    top: 5px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #7c63ff;
+
+    border: 4px solid #0b1020;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 2px #7c63ff;
+}
+
+#journey strong {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+#journey li p {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects article {
+    padding: 35px;
+
+    margin-bottom: 25px;
+
+    background-color: #151d32;
+
+    border: 1px solid #28314a;
+    border-radius: 18px;
+
+    transition: 0.35s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-7px);
+
+    border-color: #7c63ff;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+#projects h3 {
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+}
+
+#projects h4 {
+    color: #9b87ff;
+
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+#projects ul {
+    padding-left: 20px;
+}
+
+#projects li {
+    color: #aeb7cc;
+    margin-bottom: 5px;
+}
+
+#projects strong {
+    color: #ffffff;
+}
+
+#projects a {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    padding: 10px 20px;
+
+    background-color: #7c63ff;
+
+    border-radius: 12px;
+
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+#projects a:hover {
+    background-color: #9582ff;
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   PROJECT BADGE
+========================= */
+
+#projects article {
+    position: relative;
+}
+
+.project-badge {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    background-color: #7c63ff;
+    color: white;
+
+    padding: 6px 16px;
+    border-radius: 20px;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(124, 99, 255, 0.4);
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+#experience article {
+    max-width: 850px;
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: #151d32;
+
+    border-left: 5px solid #7c63ff;
+
+    border-radius: 14px;
+}
+
+#experience h3 {
+    font-size: 1.7rem;
+}
+
+#experience h4 {
+    color: #9b87ff;
+}
+
+#experience ul {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#experience li {
+    color: #aeb7cc;
+    margin-bottom: 10px;
+}
+
+#experience a {
+    color: #9b87ff;
+    font-weight: bold;
+}
+
+/* =========================
+   EYEBROW LABELS
+========================= */
+
+.eyebrow {
+    color: #9b87ff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   GITHUB
+========================= */
+
+#github {
+    text-align: center;
+}
+
+#github p {
+    margin-bottom: 25px;
+}
+
+#github a {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #7c63ff;
+
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+#github a:hover {
+    background-color: #9582ff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #171f39 0%,
+            #0b1020 70%
+        );
+}
+
+#contact > p {
+    max-width: 650px;
+
+    margin: auto;
+}
+
+#contact h3 {
+    color: #9b87ff;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact li {
+    margin: 14px 0;
+    color: #aeb7cc;
+}
+
+#contact a {
+    color: #9b87ff;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+#contact a:hover {
+    color: #c1b5ff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 35px;
+
+    background-color: #080c17;
+
+    border-top: 1px solid #252d44;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#backToTop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #7c63ff;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+#backToTop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background-color: #9582ff;
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 60px 20px 30px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        gap: 15px;
+        border-radius: 20px;
+    }
+
+    section {
+        padding: 75px 20px;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    header > p:nth-of-type(2) {
+        font-size: 0.95rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header > div {
+        flex-wrap: wrap;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    #projects article,
+    #education article,
+    #experience article {
+        padding: 22px;
+    }
+
+    #journey ol {
+        padding-left: 25px;
+    }
+
+    #journey li {
+        padding-left: 20px;
+    }
+
+}
