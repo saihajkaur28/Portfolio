@@ -463,6 +463,15 @@ header > div a:hover {
     box-shadow: 0 4px 10px rgba(124, 99, 255, 0.4);
 }
 
+@media (max-width: 768px) {
+    .project-badge {
+        position: static;
+        display: block;
+        width: fit-content;
+        margin: 0 0 20px auto;
+    }
+}
+
 /* =========================
    EXPERIENCE
 ========================= */
@@ -679,6 +688,15 @@ footer p {
     transform: translateY(-5px);
 }
 
+@media (max-width: 768px) {
+    #backToTop {
+        width: 42px;
+        height: 42px;
+        right: 18px;
+        bottom: 18px;
+        font-size: 1.3rem;
+    }
+}
 
 /* =========================
    RESPONSIVE DESIGN
